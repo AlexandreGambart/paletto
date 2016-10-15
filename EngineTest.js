@@ -155,4 +155,12 @@ PentagoTest.prototype.testEleventhHistory = function() {
     engine.addMarble(1, 1); // e1
 
     assertEquals(true, engine.checkWin());
+
+    PentagoTest.prototype.testPlay = function() {
+
+        engine.addMarble(6, 2, "b");
+    };
+
+
+
 };

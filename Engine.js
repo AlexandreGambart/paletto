@@ -123,6 +123,41 @@ Pentago.Engine = function () {
         }
     };
 
+
+    function marbles_alignment() {
+        var count = 1;
+        var ex = undefined
+        var j = undefined;
+        var i;
+        var check;
+       for( i = 0; i<_board.length; i++){
+            for(var j = 0; j<_board.length; j++){
+                if(j != 0)
+                    ex = _board[j-1][i];
+
+                count = check(count, ex, _board[j][i]);
+                if(count>=5)
+                    return _board[j][i];
+            }
+        }
+    };
+
+    function column_alignment() {
+        for(var i = 0; i<_board.length; i++){
+            var count = 1;
+            var ex = undefined;
+            var j;
+            var check;
+            for( j = 0; j<_board.length; j++){
+                if(j != 0)
+                    ex = _board[i][j-1];
+
+                count= check(count, ex, _board[i][j]);
+                if(count>=5)
+                    return _board[i][j];
+            }
+        }
+    };
     function slotAlreadyOccupiedException() {
         this.name = "slotAlreadyOccupiedException";
     }

@@ -13,6 +13,8 @@ PentagoTest.prototype.testStartGame = function() {
 PentagoTest.prototype.testGetMarbles = function() {
     var engine = new Pentago.Engine();
     assertEquals(0, engine.getMarbles());
+
+
 };
 // troisieme histoire
 PentagoTest.prototype.testGetSlot = function() {

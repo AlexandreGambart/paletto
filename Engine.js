@@ -85,7 +85,7 @@ Pentago.Engine = function () {
     this.switchPlayer = function() {
         _currentPlayer = _currentPlayer === 'w' ? 'b' : 'w';
     };
-
+    // onzieme histoire
     this.checkWin = function() {
         // (a1, b1, c1, d1 et e1)
         if(this.getSlot(0, 0) === this.getSlot(0, 1) &&
@@ -98,6 +98,7 @@ Pentago.Engine = function () {
         return false;
     };
 
+    // douzieme histoire
     this.play = function(str) {
         // c4cbl ;d4abr ;c3ctl ;c3ctl ;c4cbl ;e5cbr ;b1ctl ;b2ctr ;c4cbl ;c3
         var res = str.split(';');

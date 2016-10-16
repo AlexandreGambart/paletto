@@ -14,7 +14,7 @@ PentagoTest.prototype.testGetMarbles = function() {
     var engine = new Pentago.Engine();
     assertEquals(0, engine.getMarbles());
 };
-
+// troisieme histoire
 PentagoTest.prototype.testGetSlot = function() {
     var engine = new Pentago.Engine();
     engine.startGame();
@@ -22,7 +22,7 @@ PentagoTest.prototype.testGetSlot = function() {
     engine.addMarble(0, 0);
     assertEquals('w', engine.getSlot(0, 0));
 };
-
+// quatrieme histoire
 PentagoTest.prototype.testAddMarble = function() {
     var engine = new Pentago.Engine();
     engine.startGame();
@@ -33,7 +33,7 @@ PentagoTest.prototype.testAddMarble = function() {
     assertEquals(2, engine.getMarbles());
     assertException(function () { engine.addMarble(0, 0); }, "slotAlreadyOccupiedException");
 };
-
+// cinquieme  hsitoire
 PentagoTest.prototype.testRotateSubBoard = function() {
     var engine = new Pentago.Engine();
     engine.startGame();
@@ -66,7 +66,7 @@ PentagoTest.prototype.testReverseRotateSubBoard = function() {
     assertEquals('w', engine.getSlot(0, 0));
     assertEquals('b', engine.getSlot(0, 6));
 };
-
+// dixieme histoire
 PentagoTest.prototype.testTenthHistory = function() {
     var engine = new Pentago.Engine();
     engine.startGame();
